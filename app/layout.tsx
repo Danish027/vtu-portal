@@ -17,11 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClerkProvider
-        publishableKey={
-          "pk_test_bGliZXJhbC1tb29zZS00Mi5jbGVyay5hY2NvdW50cy5kZXYk"
-        }
-      >
+      <ClerkProvider>
         <body className={inter.className}>{children}</body>
       </ClerkProvider>
     </html>

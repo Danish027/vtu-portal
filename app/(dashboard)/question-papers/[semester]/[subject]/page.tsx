@@ -33,7 +33,7 @@ const page = async ({
       {data.length === 0 ? (
         <div className="flex flex-col items-center justify-center gap-5">
           <h1 className="text-2xl font-semibold text-gray-700 mt-[200px]">
-            Notes uploaded soon.
+            Question papers uploaded soon.
           </h1>
         </div>
       ) : (
@@ -41,7 +41,7 @@ const page = async ({
           <p className="text-2xl font-semibold text-gray-700 m-5 underline">
             {data[0]?.name}
           </p>
-          <div className="grid grid-cols-4 h-[200px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 h-[200px]">
             {data.map((item) => {
               return (
                 <Link

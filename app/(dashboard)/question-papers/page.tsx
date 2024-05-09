@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <Subnav label="Notes" />
-      <div className="grid grid-cols-3 justify-center items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 justify-center items-center">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => {
           return (
             <Link

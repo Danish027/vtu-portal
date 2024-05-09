@@ -1,10 +1,41 @@
 "use client";
 import { User } from "@/db/schema";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { checkIp } from "@/utils/check-ip";
+import { redirect } from "next/navigation";
 
 const UserProfile = ({ user }: { user: User }) => {
+  const [ip, setIp] = useState("");
+
+  useEffect(() => {
+    const getIp = async () => {
+      const { ip } = await checkIp();
+      setIp(ip);
+    };
+    getIp();
+  }, []);
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="text-center h-screen w-screen flex justify-center items-center">
+        loading...
+      </div>
+    );
+  }
+  if (ip !== "" && ip !== "86.104.72.83") {
+    return redirect("/");
+  }
+
   return (
     <div className="p-10">
       <div className="flex justify-between items-center">

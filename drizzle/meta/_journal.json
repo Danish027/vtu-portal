@@ -1,0 +1,41 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1715178605738,
+      "tag": "0000_ancient_william_stryker",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1715179556531,
+      "tag": "0001_broad_korath",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1715194537023,
+      "tag": "0002_silly_exodus",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1715199151882,
+      "tag": "0003_motionless_forgotten_one",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1715201911799,
+      "tag": "0004_silent_boomerang",
+      "breakpoints": true
+    }
+  ]
+}

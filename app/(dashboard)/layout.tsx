@@ -35,11 +35,11 @@ export default async function RootLayout({
 }>) {
   const { userId } = auth();
 
-  if (!userId) return redirect("/sign-in");
+  // if (!userId) return redirect("/sign-in");
 
-  const user = await getUser();
+  // const user = await getUser();
 
-  if (!user) return redirect("/create-account");
+  // if (!user) return redirect("/create-account");
 
   return (
     <html lang="en">
